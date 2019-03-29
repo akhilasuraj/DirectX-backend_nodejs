@@ -32,7 +32,7 @@ users.post('/register',(req, res)=>{
     })
        .then(user =>{
            if(!user){
-               const hash = bcrypt.hashSync(userData.password, 10)
+               const hash = bcrypt.hashSync(userData.password)
                userData.password = hash
                User.create(userData)
                .then(user =>{
