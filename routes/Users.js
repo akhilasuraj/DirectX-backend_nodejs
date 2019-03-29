@@ -12,7 +12,7 @@ process.env.SECRET_KEY = 'secret'
 //REGISTER
 
 users.get('/test',(req,res)=>{
-  res.send("hellow")
+  res.send("hello world")
 })
 
 users.post('/register',(req, res)=>{
