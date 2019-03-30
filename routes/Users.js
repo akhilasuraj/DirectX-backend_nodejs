@@ -72,7 +72,7 @@ users.post('/register',(req, res)=>{
              })
              res.json({token : token})
          }else{
-             res.send('Incorrect password')
+             res.send('error: Incorrect password')
          }
     })
      .catch(err =>{
