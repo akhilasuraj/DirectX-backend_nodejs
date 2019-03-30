@@ -72,11 +72,11 @@ users.post('/register',(req, res)=>{
              })
              res.json({token : token})
          }else{
-             res.send('User does not exist')
+             res.send('Incorrect password')
          }
     })
      .catch(err =>{
-         res.send('error:' + err)
+         res.send('error: User does not exist' /*+ err*/)
      })
   })
 
