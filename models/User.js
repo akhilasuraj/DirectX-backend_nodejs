@@ -6,11 +6,11 @@ module.exports = db.sequelize.define(
    'user',
    {
 
-      first_name: {
+      firstName: {
          type: Sequelize.STRING
       },
 
-      last_name: {
+      lastName: {
          type: Sequelize.STRING
       },
 
