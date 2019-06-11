@@ -17,6 +17,7 @@ users.get('/test', (req, res) => {
 
 
 users.post('/register', (req, res) => {
+  res.send("hellooo");
   const today = new Date()
   const userData = {
     firstName: req.body.firstName,
