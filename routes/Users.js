@@ -25,6 +25,7 @@ users.post('/register', (req, res) => {
     password: req.body.password,
     created: today
   }
+  console.log(req.body.firstName);
   User.findOne({
     where: {
       email: req.body.email
